@@ -1,0 +1,22 @@
+{
+  "name": "regex-foreach",
+  "version": "1.0.0",
+  "description": "Iterate through matches in a string.",
+  "main": "regex.js",
+  "scripts": {
+    "test": "mocha regex.spec.js"
+  },
+  "keywords": [
+    "regex",
+    "foreach",
+    "iterator",
+    "each",
+    "iterate"
+  ],
+  "author": "Christopher Jacobs",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
