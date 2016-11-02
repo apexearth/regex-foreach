@@ -13,7 +13,11 @@
     "each",
     "iterate"
   ],
-  "author": "Christopher Jacobs",
+  "author": {
+    "name": "Christopher Jacobs",
+    "email": "apexearth@gmail.com"
+  },
+  "repository": "https://github.com/apexearth/regex-foreach",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
