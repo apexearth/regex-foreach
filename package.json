@@ -4,7 +4,7 @@
   "description": "Iterate through matches in a string.",
   "main": "regex.js",
   "scripts": {
-    "test": "mocha regex.spec.js"
+    "test": "mocha regex-foreach.spec.js"
   },
   "keywords": [
     "regex",
