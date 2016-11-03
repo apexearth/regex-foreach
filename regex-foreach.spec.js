@@ -125,4 +125,16 @@ describe('regex.js', function () {
         expect(iterations).to.equal(3000);
         expect(hits++).to.equal(3000);
     })
+
+    it('multiple raw matches using RegExp, greedy', function () {
+        iterations = 0;
+        regexForEach(/(l),(d)/g, 'l l,d l l,d l', function (match, index, raw) {
+            expect(match).to.equal('l,d');
+            expect(raw[1]).to.equal('l');
+            expect(raw[2]).to.equal('d');
+            expect(index).to.equal(2 + iterations * 6);
+            iterations++;
+        });
+        expect(iterations).to.equal(2);
+    });
 });

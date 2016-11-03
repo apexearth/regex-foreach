@@ -21,8 +21,8 @@ regexForEach(/e. /g, 'hello there, hey hello!', function (match, index) {
 });
 
 // Outputs:
-// e, 10
-// ey 14
+// e,  10
+// ey  14
 
 
 regexForEach(/e. /, 'hello there, hey hello!', function (match, index) {
@@ -30,5 +30,15 @@ regexForEach(/e. /, 'hello there, hey hello!', function (match, index) {
 });
 
 // Outputs:
-// e, 10
+// e,  10
+
+
+regexForEach(/(l),(d)/g, 'l l,d l l,d l', function (match, index, raw) {
+    console.log(raw);
+});
+
+// Outputs:
+// [ 'l,d', 'l', 'd', index: 2, input: 'l l,d l l,d l' ]
+// [ 'l,d', 'l', 'd', index: 8, input: 'l l,d l l,d l' ]
+
 ```

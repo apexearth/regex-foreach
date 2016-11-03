@@ -4,11 +4,11 @@ module.exports = function (regex, value, fn) {
     var greedy = regex.flags.indexOf('g') >= 0;
     if(greedy) {
         while (match = regex.exec(value)) {
-            fn(match[0], match.index);
+            fn(match[0], match.index, match);
         }
     } else {
         if(match = regex.exec(value)){
-            fn(match[0], match.index);
+            fn(match[0], match.index, match);
         }
     }
 };
